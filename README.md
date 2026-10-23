@@ -47,6 +47,7 @@ src/
   data.js                # Modelos-base e utilitários de valores, fotos e parcelas
   styles.css             # Estilos gerais e do catálogo
   institutional.css      # Estilos institucionais e responsivos
+  theme.css              # Paleta verde, alternância de superfícies e novos componentes
 public/images/estrutura/ # Imagens locais da concessionária
  tests/routes.test.mjs   # Testes de integração das rotas e conteúdo
 ```
@@ -79,7 +80,7 @@ O layout usa `Outlet`. Links internos usam `Link` e `NavLink`; redirecionamentos
 
 ## Limites da demonstração
 
-A marca, os veículos, os valores e os serviços são demonstrativos. O catálogo contém 36 registros derivados de seis modelos-base. Fotografias externas são ilustrativas e podem não corresponder aos modelos. As imagens locais da estrutura foram geradas por IA e não representam instalações reais.
+A marca, os veículos, os valores e os serviços são demonstrativos. O catálogo contém 36 registros derivados de seis modelos-base. Todas as imagens são locais e geradas por IA para ilustrar a concessionária fictícia. Os 36 registros possuem fotos distintas; a mesma imagem de um veículo é mantida nos seus detalhes, favoritos e comparação. Os modelos e ambientes são ilustrativos e não representam uma operação real.
 
 Formulários validam os campos e exibem uma confirmação local, sem transmitir dados. Favoritos usam armazenamento local; caso o navegador bloqueie esse armazenamento, continuam funcionando em memória. O financiamento usa sistema Price a 1,79% ao mês, sem IOF, tarifas, seguros ou CET; não é oferta de crédito.
 
@@ -88,3 +89,23 @@ Antes de uma publicação comercial, substitua os dados por informações reais,
 ## Testes
 
 Os testes renderizam a aplicação com `MemoryRouter`, verificando páginas, veículo inexistente, URL desconhecida, menu ativo, parâmetros do contato e imagens da estrutura. São testes de integração de renderização; não substituem uma conferência visual no navegador.
+
+## Nova experiência visual
+
+- Paleta com verde profundo, verde suave e lima, alternando fundos nas páginas.
+- Seletor Cidade / Família / Conforto na home, com navegação por teclado e filtros de carroceria na URL do estoque.
+- Comparador de até três veículos em `/comparar`, com preço, versão, carroceria, cor, ano, quilometragem e câmbio. A seleção é mantida em memória durante a navegação.
+- 50 novas imagens próprias: 14 institucionais e 36 do estoque, além das quatro imagens existentes da estrutura. Os arquivos novos são JPEGs otimizados para carregamento local.
+- [Documentação e prompts das imagens](docs/IMAGENS.md).
+
+O servidor de desenvolvimento usa monitoramento por consulta periódica para evitar bloqueios de arquivos no Windows. A pasta `work` fica fora desse monitoramento.
+
+## Assistente, galeria e agendamento
+
+- `/encontre-meu-carro`: questionário em quatro etapas com orçamento, rotina, espaço e câmbio. Sugere até três veículos disponíveis, com motivos da indicação e respeito ao orçamento.
+- `/carros/:id`: três imagens exclusivas por veículo (frente, traseira e interior), miniaturas, ampliação e navegação por teclado. Sem vídeo. São 72 novas imagens, além das 36 fotos dianteiras existentes, todas ilustrativas geradas por IA.
+- `/agendar?veiculo=1&tipo=test-drive`: escolha de veículo, unidade, visita ou test-drive, dia e horário. Prepara mensagem para a equipe e permite copiar o pedido e baixar um lembrete provisório. O agendamento depende de confirmação da equipe.
+
+O WhatsApp está fictício e inativo nesta demonstração. Nenhuma mensagem é enviada automaticamente. Para ativar, copie `.env.example` para `.env`, preencha `VITE_TEAM_WHATSAPP` com o número real (55 + DDD + número, somente dígitos) e reinicie o servidor ou gere uma nova compilação. Com o canal ativo, o cliente abre o WhatsApp com a mensagem preenchida e confirma o envio lá.
+
+Os dados do agendamento ficam somente em memória. Não há sistema de disponibilidade real nem reserva de horário no servidor. Os testes também cobrem recomendações, horários, fuso de Natal, mensagem, calendário e integridade das imagens.

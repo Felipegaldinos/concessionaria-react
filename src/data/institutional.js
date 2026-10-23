@@ -70,19 +70,19 @@ export const spaces = [
 ];
 export const teamPhotos = {
   AC: [
-    "photo-1580489944761-15a19d654956",
+    "/images/institucional/equipe-atendimento.jpg",
     "Retrato profissional ilustrativo para a área de atendimento",
   ],
   AV: [
-    "photo-1500648767791-00dcc994a43e",
+    "/images/institucional/equipe-avaliacao.jpg",
     "Retrato profissional ilustrativo para a área de avaliação",
   ],
   FN: [
-    "photo-1573496359142-b8d87734a5a2",
+    "/images/institucional/equipe-financeiro.jpg",
     "Retrato profissional ilustrativo para orientação financeira",
   ],
   SP: [
-    "photo-1506794778202-cad84cf45f1d",
+    "/images/institucional/equipe-suporte.jpg",
     "Retrato profissional ilustrativo para relacionamento e suporte",
   ],
 };

@@ -1,3 +1,4 @@
+import ProfileFinder from "../components/institutional/ProfileFinder";
 import React from "react";
 import Action from "../components/institutional/Action.jsx";
 import Intro from "../components/institutional/Intro.jsx";
@@ -5,7 +6,6 @@ import DemoNote from "../components/institutional/DemoNote.jsx";
 import CTA from "../components/institutional/CTA.jsx";
 import ServicesGrid from "../components/institutional/ServicesGrid.jsx";
 import Journey from "../components/institutional/Journey.jsx";
-import { photo } from "../data.js";
 import { spaces } from "../data/institutional.js";
 
 export default function Home({}) {
@@ -13,8 +13,8 @@ export default function Home({}) {
     <>
       <section className="welcome">
         <img
-          src={photo("photo-1492144534655-ae79c964c9d7", 1600)}
-          alt="Automóvel esportivo em imagem ilustrativa"
+          src="/images/institucional/home-hero.jpg"
+          alt="Fachada da concessionária fictícia Vértice Motors com veículos em exposição"
         />
         <div className="container welcome-content">
           <span className="inst-tag">VÉRTICE MOTORS · NATAL, RN</span>
@@ -36,7 +36,9 @@ export default function Home({}) {
             </Action>
           </div>
         </div>
-        <span className="welcome-caption">Imagem ilustrativa</span>
+        <span className="welcome-caption">
+          Concessionária fictícia · Imagem gerada por IA
+        </span>
       </section>
       <div className="inst-principles container">
         <span>
@@ -52,7 +54,24 @@ export default function Home({}) {
           04 <b>Apoio em cada etapa</b>
         </span>
       </div>
-      <div className="container institutional">
+      <div className="container institutional home-institutional">
+        <ProfileFinder />
+        <div className="new-experiences">
+          <div>
+            <span className="inst-tag">UMA ESCOLHA MAIS PESSOAL</span>
+            <h2>Seu próximo carro, com os motivos certos.</h2>
+            <p>
+              Responda quatro perguntas e conheça até três opções do estoque que
+              combinam com você.
+            </p>
+          </div>
+          <div>
+            <Action to="/encontre-meu-carro">Encontrar meu carro ↗</Action>
+            <Action to="/agendar" outline>
+              Agendar visita ou test-drive
+            </Action>
+          </div>
+        </div>
         <section className="inst-split">
           <div>
             <Intro
@@ -73,13 +92,13 @@ export default function Home({}) {
           <div className="inst-photo">
             <img
               loading="lazy"
-              src={photo("photo-1449965408869-eaa3f722e40d", 900)}
-              alt="Interior de automóvel com vista para a estrada"
+              src="/images/institucional/home-consultoria.jpg"
+              alt="Atendimento a clientes no showroom fictício Vértice Motors"
             />
             <span>Seu caminho inspira a nossa proposta.</span>
           </div>
         </section>
-        <section className="inst-section">
+        <section className="inst-section structure-highlight">
           <Intro
             tag="NOSSA ESTRUTURA"
             title="Espaços pensados para receber você."
@@ -103,10 +122,12 @@ export default function Home({}) {
           <ServicesGrid />
         </section>
         <section className="inst-team-banner">
-          <div className="team-graphic" aria-hidden="true">
-            <span>VM</span>
-            <span>↗</span>
-            <span>♡</span>
+          <div className="home-team-photo">
+            <img
+              loading="lazy"
+              src="/images/institucional/home-equipe.jpg"
+              alt="Equipe fictícia da Vértice Motors no showroom"
+            />
           </div>
           <div>
             <Intro

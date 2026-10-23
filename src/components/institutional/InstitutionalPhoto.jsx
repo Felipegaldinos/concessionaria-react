@@ -17,7 +17,7 @@ export default function InstitutionalPhoto({
         height="650"
       />
       <figcaption>
-        {image.startsWith("/images/estrutura/")
+        {image.startsWith("/images/")
           ? "Ilustração gerada por IA"
           : "Foto ilustrativa"}
       </figcaption>

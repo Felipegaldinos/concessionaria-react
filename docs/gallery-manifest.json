@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "key": "veiculo-01-interior",
+    "url": "/images/galeria/veiculo-01-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Volkswagen T-Cross 2024, exterior pearl white visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 1; do not show exterior instead of cabin."
+  },
+  {
+    "id": 1,
+    "key": "veiculo-01-rear",
+    "url": "/images/galeria/veiculo-01-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one pearl white Volkswagen T-Cross 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 1."
+  },
+  {
+    "id": 2,
+    "key": "veiculo-02-interior",
+    "url": "/images/galeria/veiculo-02-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Honda Civic 2022, exterior pearl white visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 2; do not show exterior instead of cabin."
+  },
+  {
+    "id": 2,
+    "key": "veiculo-02-rear",
+    "url": "/images/galeria/veiculo-02-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one pearl white Honda Civic 2022, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 2."
+  },
+  {
+    "id": 3,
+    "key": "veiculo-03-interior",
+    "url": "/images/galeria/veiculo-03-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Chevrolet Onix 2024, exterior pearl white visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 3; do not show exterior instead of cabin."
+  },
+  {
+    "id": 3,
+    "key": "veiculo-03-rear",
+    "url": "/images/galeria/veiculo-03-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one pearl white Chevrolet Onix 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 3."
+  },
+  {
+    "id": 4,
+    "key": "veiculo-04-interior",
+    "url": "/images/galeria/veiculo-04-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Toyota Corolla 2023, exterior pearl white visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 4; do not show exterior instead of cabin."
+  },
+  {
+    "id": 4,
+    "key": "veiculo-04-rear",
+    "url": "/images/galeria/veiculo-04-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one pearl white Toyota Corolla 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 4."
+  },
+  {
+    "id": 5,
+    "key": "veiculo-05-interior",
+    "url": "/images/galeria/veiculo-05-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Jeep Compass 2023, exterior pearl white visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 5; do not show exterior instead of cabin."
+  },
+  {
+    "id": 5,
+    "key": "veiculo-05-rear",
+    "url": "/images/galeria/veiculo-05-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one pearl white Jeep Compass 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 5."
+  },
+  {
+    "id": 6,
+    "key": "veiculo-06-interior",
+    "url": "/images/galeria/veiculo-06-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Fiat Argo 2024, exterior pearl white visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 6; do not show exterior instead of cabin."
+  },
+  {
+    "id": 6,
+    "key": "veiculo-06-rear",
+    "url": "/images/galeria/veiculo-06-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one pearl white Fiat Argo 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 6."
+  },
+  {
+    "id": 7,
+    "key": "veiculo-07-interior",
+    "url": "/images/galeria/veiculo-07-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Volkswagen T-Cross 2024, exterior metallic silver visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 7; do not show exterior instead of cabin."
+  },
+  {
+    "id": 7,
+    "key": "veiculo-07-rear",
+    "url": "/images/galeria/veiculo-07-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one metallic silver Volkswagen T-Cross 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 7."
+  },
+  {
+    "id": 8,
+    "key": "veiculo-08-interior",
+    "url": "/images/galeria/veiculo-08-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Honda Civic 2022, exterior metallic silver visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 8; do not show exterior instead of cabin."
+  },
+  {
+    "id": 8,
+    "key": "veiculo-08-rear",
+    "url": "/images/galeria/veiculo-08-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one metallic silver Honda Civic 2022, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 8."
+  },
+  {
+    "id": 9,
+    "key": "veiculo-09-interior",
+    "url": "/images/galeria/veiculo-09-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Chevrolet Onix 2024, exterior metallic silver visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 9; do not show exterior instead of cabin."
+  },
+  {
+    "id": 9,
+    "key": "veiculo-09-rear",
+    "url": "/images/galeria/veiculo-09-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one metallic silver Chevrolet Onix 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 9."
+  },
+  {
+    "id": 10,
+    "key": "veiculo-10-interior",
+    "url": "/images/galeria/veiculo-10-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Toyota Corolla 2023, exterior metallic silver visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 10; do not show exterior instead of cabin."
+  },
+  {
+    "id": 10,
+    "key": "veiculo-10-rear",
+    "url": "/images/galeria/veiculo-10-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one metallic silver Toyota Corolla 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 10."
+  },
+  {
+    "id": 11,
+    "key": "veiculo-11-interior",
+    "url": "/images/galeria/veiculo-11-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Jeep Compass 2023, exterior metallic silver visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 11; do not show exterior instead of cabin."
+  },
+  {
+    "id": 11,
+    "key": "veiculo-11-rear",
+    "url": "/images/galeria/veiculo-11-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one metallic silver Jeep Compass 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 11."
+  },
+  {
+    "id": 12,
+    "key": "veiculo-12-interior",
+    "url": "/images/galeria/veiculo-12-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Fiat Argo 2024, exterior metallic silver visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 12; do not show exterior instead of cabin."
+  },
+  {
+    "id": 12,
+    "key": "veiculo-12-rear",
+    "url": "/images/galeria/veiculo-12-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one metallic silver Fiat Argo 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 12."
+  },
+  {
+    "id": 13,
+    "key": "veiculo-13-interior",
+    "url": "/images/galeria/veiculo-13-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Volkswagen T-Cross 2024, exterior graphite gray visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 13; do not show exterior instead of cabin."
+  },
+  {
+    "id": 13,
+    "key": "veiculo-13-rear",
+    "url": "/images/galeria/veiculo-13-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one graphite gray Volkswagen T-Cross 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 13."
+  },
+  {
+    "id": 14,
+    "key": "veiculo-14-interior",
+    "url": "/images/galeria/veiculo-14-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Honda Civic 2022, exterior graphite gray visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 14; do not show exterior instead of cabin."
+  },
+  {
+    "id": 14,
+    "key": "veiculo-14-rear",
+    "url": "/images/galeria/veiculo-14-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one graphite gray Honda Civic 2022, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 14."
+  },
+  {
+    "id": 15,
+    "key": "veiculo-15-interior",
+    "url": "/images/galeria/veiculo-15-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Chevrolet Onix 2024, exterior graphite gray visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 15; do not show exterior instead of cabin."
+  },
+  {
+    "id": 15,
+    "key": "veiculo-15-rear",
+    "url": "/images/galeria/veiculo-15-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one graphite gray Chevrolet Onix 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 15."
+  },
+  {
+    "id": 16,
+    "key": "veiculo-16-interior",
+    "url": "/images/galeria/veiculo-16-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Toyota Corolla 2023, exterior graphite gray visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 16; do not show exterior instead of cabin."
+  },
+  {
+    "id": 16,
+    "key": "veiculo-16-rear",
+    "url": "/images/galeria/veiculo-16-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one graphite gray Toyota Corolla 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 16."
+  },
+  {
+    "id": 17,
+    "key": "veiculo-17-interior",
+    "url": "/images/galeria/veiculo-17-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Jeep Compass 2023, exterior graphite gray visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 17; do not show exterior instead of cabin."
+  },
+  {
+    "id": 17,
+    "key": "veiculo-17-rear",
+    "url": "/images/galeria/veiculo-17-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one graphite gray Jeep Compass 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 17."
+  },
+  {
+    "id": 18,
+    "key": "veiculo-18-interior",
+    "url": "/images/galeria/veiculo-18-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Fiat Argo 2024, exterior graphite gray visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 18; do not show exterior instead of cabin."
+  },
+  {
+    "id": 18,
+    "key": "veiculo-18-rear",
+    "url": "/images/galeria/veiculo-18-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one graphite gray Fiat Argo 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 18."
+  },
+  {
+    "id": 19,
+    "key": "veiculo-19-interior",
+    "url": "/images/galeria/veiculo-19-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Volkswagen T-Cross 2024, exterior deep blue visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 19; do not show exterior instead of cabin."
+  },
+  {
+    "id": 19,
+    "key": "veiculo-19-rear",
+    "url": "/images/galeria/veiculo-19-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one deep blue Volkswagen T-Cross 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 19."
+  },
+  {
+    "id": 20,
+    "key": "veiculo-20-interior",
+    "url": "/images/galeria/veiculo-20-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Honda Civic 2022, exterior deep blue visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 20; do not show exterior instead of cabin."
+  },
+  {
+    "id": 20,
+    "key": "veiculo-20-rear",
+    "url": "/images/galeria/veiculo-20-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one deep blue Honda Civic 2022, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 20."
+  },
+  {
+    "id": 21,
+    "key": "veiculo-21-interior",
+    "url": "/images/galeria/veiculo-21-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Chevrolet Onix 2024, exterior deep blue visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 21; do not show exterior instead of cabin."
+  },
+  {
+    "id": 21,
+    "key": "veiculo-21-rear",
+    "url": "/images/galeria/veiculo-21-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one deep blue Chevrolet Onix 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 21."
+  },
+  {
+    "id": 22,
+    "key": "veiculo-22-interior",
+    "url": "/images/galeria/veiculo-22-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Toyota Corolla 2023, exterior deep blue visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 22; do not show exterior instead of cabin."
+  },
+  {
+    "id": 22,
+    "key": "veiculo-22-rear",
+    "url": "/images/galeria/veiculo-22-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one deep blue Toyota Corolla 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 22."
+  },
+  {
+    "id": 23,
+    "key": "veiculo-23-interior",
+    "url": "/images/galeria/veiculo-23-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Jeep Compass 2023, exterior deep blue visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 23; do not show exterior instead of cabin."
+  },
+  {
+    "id": 23,
+    "key": "veiculo-23-rear",
+    "url": "/images/galeria/veiculo-23-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one deep blue Jeep Compass 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 23."
+  },
+  {
+    "id": 24,
+    "key": "veiculo-24-interior",
+    "url": "/images/galeria/veiculo-24-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Fiat Argo 2024, exterior deep blue visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 24; do not show exterior instead of cabin."
+  },
+  {
+    "id": 24,
+    "key": "veiculo-24-rear",
+    "url": "/images/galeria/veiculo-24-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one deep blue Fiat Argo 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 24."
+  },
+  {
+    "id": 25,
+    "key": "veiculo-25-interior",
+    "url": "/images/galeria/veiculo-25-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Volkswagen T-Cross 2024, exterior black visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 25; do not show exterior instead of cabin."
+  },
+  {
+    "id": 25,
+    "key": "veiculo-25-rear",
+    "url": "/images/galeria/veiculo-25-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one black Volkswagen T-Cross 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 25."
+  },
+  {
+    "id": 26,
+    "key": "veiculo-26-interior",
+    "url": "/images/galeria/veiculo-26-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Honda Civic 2022, exterior black visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 26; do not show exterior instead of cabin."
+  },
+  {
+    "id": 26,
+    "key": "veiculo-26-rear",
+    "url": "/images/galeria/veiculo-26-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one black Honda Civic 2022, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 26."
+  },
+  {
+    "id": 27,
+    "key": "veiculo-27-interior",
+    "url": "/images/galeria/veiculo-27-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Chevrolet Onix 2024, exterior black visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 27; do not show exterior instead of cabin."
+  },
+  {
+    "id": 27,
+    "key": "veiculo-27-rear",
+    "url": "/images/galeria/veiculo-27-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one black Chevrolet Onix 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 27."
+  },
+  {
+    "id": 28,
+    "key": "veiculo-28-interior",
+    "url": "/images/galeria/veiculo-28-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Toyota Corolla 2023, exterior black visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 28; do not show exterior instead of cabin."
+  },
+  {
+    "id": 28,
+    "key": "veiculo-28-rear",
+    "url": "/images/galeria/veiculo-28-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one black Toyota Corolla 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 28."
+  },
+  {
+    "id": 29,
+    "key": "veiculo-29-interior",
+    "url": "/images/galeria/veiculo-29-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Jeep Compass 2023, exterior black visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 29; do not show exterior instead of cabin."
+  },
+  {
+    "id": 29,
+    "key": "veiculo-29-rear",
+    "url": "/images/galeria/veiculo-29-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one black Jeep Compass 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 29."
+  },
+  {
+    "id": 30,
+    "key": "veiculo-30-interior",
+    "url": "/images/galeria/veiculo-30-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Fiat Argo 2024, exterior black visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 30; do not show exterior instead of cabin."
+  },
+  {
+    "id": 30,
+    "key": "veiculo-30-rear",
+    "url": "/images/galeria/veiculo-30-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one black Fiat Argo 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 30."
+  },
+  {
+    "id": 31,
+    "key": "veiculo-31-interior",
+    "url": "/images/galeria/veiculo-31-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Volkswagen T-Cross 2024, exterior burgundy red visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 31; do not show exterior instead of cabin."
+  },
+  {
+    "id": 31,
+    "key": "veiculo-31-rear",
+    "url": "/images/galeria/veiculo-31-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one burgundy red Volkswagen T-Cross 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 31."
+  },
+  {
+    "id": 32,
+    "key": "veiculo-32-interior",
+    "url": "/images/galeria/veiculo-32-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Honda Civic 2022, exterior burgundy red visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 32; do not show exterior instead of cabin."
+  },
+  {
+    "id": 32,
+    "key": "veiculo-32-rear",
+    "url": "/images/galeria/veiculo-32-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one burgundy red Honda Civic 2022, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 32."
+  },
+  {
+    "id": 33,
+    "key": "veiculo-33-interior",
+    "url": "/images/galeria/veiculo-33-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Chevrolet Onix 2024, exterior burgundy red visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 33; do not show exterior instead of cabin."
+  },
+  {
+    "id": 33,
+    "key": "veiculo-33-rear",
+    "url": "/images/galeria/veiculo-33-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one burgundy red Chevrolet Onix 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 33."
+  },
+  {
+    "id": 34,
+    "key": "veiculo-34-interior",
+    "url": "/images/galeria/veiculo-34-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Toyota Corolla 2023, exterior burgundy red visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 34; do not show exterior instead of cabin."
+  },
+  {
+    "id": 34,
+    "key": "veiculo-34-rear",
+    "url": "/images/galeria/veiculo-34-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one burgundy red Toyota Corolla 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 34."
+  },
+  {
+    "id": 35,
+    "key": "veiculo-35-interior",
+    "url": "/images/galeria/veiculo-35-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Jeep Compass 2023, exterior burgundy red visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 35; do not show exterior instead of cabin."
+  },
+  {
+    "id": 35,
+    "key": "veiculo-35-rear",
+    "url": "/images/galeria/veiculo-35-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one burgundy red Jeep Compass 2023, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 35."
+  },
+  {
+    "id": 36,
+    "key": "veiculo-36-interior",
+    "url": "/images/galeria/veiculo-36-interior.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Interior photograph of Fiat Argo 2024, exterior burgundy red visible at door frame. Camera from rear seat facing dashboard, steering wheel on left, front seats and center console visible. Clean realistic factory interior, showroom forest green glass facade seen through windshield. Distinct angle for stock 36; do not show exterior instead of cabin."
+  },
+  {
+    "id": 36,
+    "key": "veiculo-36-rear",
+    "url": "/images/galeria/veiculo-36-rear.jpg",
+    "prompt": "Use case: photorealistic-natural. Single landscape commercial car gallery photograph, 1280x854 composition. Fictional Brazilian Vértice Motors showroom: forest green walls, glass windows, gray tile floor, warm wood, tropical daylight. No collage, captions or watermark. Full rear three-quarter view of one burgundy red Fiat Argo 2024, entire car visible, wheels straight, blank number plate, forest green VÉRTICE MOTORS wall behind. Match stock vehicle 36."
+  }
+]

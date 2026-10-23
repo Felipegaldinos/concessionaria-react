@@ -19,6 +19,19 @@ function readFavorites() {
 }
 export function VehicleProvider({ children }) {
   const [query, setQuery] = useState("");
+  const [comparison, setComparison] = useState([]);
+  const toggleComparison = useCallback(
+    (id) =>
+      setComparison((previous) =>
+        previous.includes(id)
+          ? previous.filter((value) => value !== id)
+          : previous.length < 3
+            ? [...previous, id]
+            : previous,
+      ),
+    [],
+  );
+  const clearComparison = useCallback(() => setComparison([]), []);
   const [favorites, setFavorites] = useState(readFavorites);
   useEffect(() => {
     try {
@@ -38,7 +51,15 @@ export function VehicleProvider({ children }) {
   );
   return (
     <VehicleContext.Provider
-      value={{ query, setQuery, favorites, toggleFavorite }}
+      value={{
+        query,
+        setQuery,
+        favorites,
+        toggleFavorite,
+        comparison,
+        toggleComparison,
+        clearComparison,
+      }}
     >
       {children}
     </VehicleContext.Provider>

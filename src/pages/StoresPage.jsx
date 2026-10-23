@@ -8,11 +8,15 @@ export default function Stores() {
       subtitle="Encontre o atendimento Vértice mais perto de você."
     >
       <div className="institution-grid">
-        <div className="store-illustration">
-          <span>⌖</span>
-          <h2>Natal / RN</h2>
-          <p>Unidade demonstrativa</p>
-        </div>
+        <figure className="store-photo">
+          <img
+            src="/images/institucional/loja-fachada.jpg"
+            alt="Fachada ilustrativa da unidade Vértice Motors em Natal"
+          />
+          <figcaption>
+            Concessionária fictícia · Imagem gerada por IA
+          </figcaption>
+        </figure>
         <div className="panel">
           <h2>Vértice Motors Natal</h2>
           <p>

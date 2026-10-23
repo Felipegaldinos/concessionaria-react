@@ -1,8 +1,11 @@
+import { useVehicleContext } from "../../context/VehicleContext";
 import React from "react";
 import { Link } from "react-router-dom";
 import { photo, money } from "../../data.js";
 
 export default function CarCard({ car: c, favorite, onFavorite }) {
+  const { comparison, toggleComparison } = useVehicleContext();
+  const compared = comparison.includes(c.id);
   return (
     <article className="car-card">
       <div className="car-image">
@@ -40,8 +43,17 @@ export default function CarCard({ car: c, favorite, onFavorite }) {
           {money(c.price)} {c.offer && <small>✹</small>}
         </strong>
       </Link>
+      <label className="compare-choice">
+        <input
+          type="checkbox"
+          checked={compared}
+          disabled={!compared && comparison.length >= 3}
+          onChange={() => toggleComparison(c.id)}
+        />{" "}
+        Comparar{!compared && comparison.length >= 3 ? " (limite: 3)" : ""}
+      </label>
       <div className="car-location">
-        ⌖ NATAL/RN <span>Foto ilustrativa</span>
+        ⌖ NATAL/RN <span>Imagem gerada por IA</span>
       </div>
     </article>
   );

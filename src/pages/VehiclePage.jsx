@@ -1,7 +1,9 @@
+import VehicleGallery from "../components/vehicles/VehicleGallery";
+import VehicleCondition from "../components/vehicles/VehicleCondition";
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import Page from "../components/common/Page.jsx";
-import { photo, money } from "../data.js";
+import { money } from "../data.js";
 import { cars } from "../data/vehicles.js";
 import { useVehicleContext } from "../context/VehicleContext.jsx";
 
@@ -19,15 +21,7 @@ export default function Detail() {
     <Page title={`${c.brand} ${c.name}`} subtitle={c.version}>
       <div className="detail-layout">
         <div>
-          <img
-            className="detail-image"
-            src={photo(c.image, 1400)}
-            alt="Foto ilustrativa do veículo"
-          />
-          <p className="demo-note">
-            Foto ilustrativa. O veículo e sua disponibilidade são
-            demonstrativos.
-          </p>
+          <VehicleGallery key={c.id} car={c} />
           <h2>Conheça este veículo</h2>
           <div className="detail-specs">
             {[
@@ -35,6 +29,7 @@ export default function Detail() {
               ["Quilometragem", c.km.toLocaleString("pt-BR") + " km"],
               ["Câmbio", c.gear],
               ["Carroceria", c.type],
+              ["Cor", c.color],
               ["Localização", "Natal / RN"],
             ].map(([k, v]) => (
               <div key={k}>
@@ -43,6 +38,7 @@ export default function Detail() {
               </div>
             ))}
           </div>
+          <VehicleCondition car={c} />
           <h2>Uma escolha com mais tranquilidade</h2>
           <p>
             Solicite informações sobre histórico, revisão e documentação antes
@@ -58,6 +54,12 @@ export default function Detail() {
           </Link>
           <Link className="btn outline" to="/financiamento">
             Simular financiamento
+          </Link>
+          <Link
+            className="btn outline"
+            to={`/agendar?veiculo=${c.id}&tipo=test-drive`}
+          >
+            Agendar visita ou test-drive ↗
           </Link>
           <button className="text-button" onClick={() => toggle(c.id)}>
             {favs.includes(c.id)

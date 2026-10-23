@@ -1,7 +1,6 @@
 import React from "react";
 import Page from "../components/common/Page.jsx";
 import DemoForm from "../components/forms/DemoForm.jsx";
-import { photo } from "../data.js";
 
 export default function Trade() {
   return (
@@ -13,8 +12,8 @@ export default function Trade() {
         <div>
           <img
             className="feature-image"
-            src={photo("photo-1492144534655-ae79c964c9d7")}
-            alt="Automóvel ilustrativo"
+            src="/images/institucional/troca-atendimento.jpg"
+            alt="Avaliação ilustrativa de um veículo na concessionária fictícia Vértice Motors"
           />
           <h2>Uma troca com transparência</h2>
           <p>

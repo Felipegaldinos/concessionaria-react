@@ -9,7 +9,7 @@ export const vehicles = [
     price: 119900,
     type: "SUV",
     gear: "Automático",
-    image: "photo-1533473359331-0135ef1b58bf",
+    image: "/images/estoque/veiculo-01.jpg",
     badge: "Destaque",
   },
   {
@@ -22,7 +22,7 @@ export const vehicles = [
     price: 145900,
     type: "Sedã",
     gear: "Automático",
-    image: "photo-1533106418989-88406c7cc8ca",
+    image: "/images/estoque/veiculo-02.jpg",
     badge: "Oportunidade",
   },
   {
@@ -35,7 +35,7 @@ export const vehicles = [
     price: 78900,
     type: "Hatch",
     gear: "Manual",
-    image: "photo-1549317661-bd32c8ce0db2",
+    image: "/images/estoque/veiculo-03.jpg",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const vehicles = [
     price: 137900,
     type: "Sedã",
     gear: "Automático",
-    image: "photo-1621007947382-bb3c3994e3fb",
+    image: "/images/estoque/veiculo-04.jpg",
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ export const vehicles = [
     price: 149900,
     type: "SUV",
     gear: "Automático",
-    image: "photo-1533558701576-23c65e0272fb",
+    image: "/images/estoque/veiculo-05.jpg",
     badge: "Selecionado",
   },
   {
@@ -72,11 +72,11 @@ export const vehicles = [
     price: 72900,
     type: "Hatch",
     gear: "Manual",
-    image: "photo-1503376780353-7e6692767b70",
+    image: "/images/estoque/veiculo-06.jpg",
   },
 ];
-export const photo = (id, width = 800) =>
-  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`;
+// Mantém uma única função para resolver os arquivos locais das imagens.
+export const photo = (source) => source;
 export const money = (value) =>
   new Intl.NumberFormat("pt-BR", {
     style: "currency",

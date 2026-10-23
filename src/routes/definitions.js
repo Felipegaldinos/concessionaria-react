@@ -1,4 +1,7 @@
 export const routeDefinitions = [
+  { path: "/encontre-meu-carro", page: "Finder", title: "Encontre meu carro" },
+  { path: "/agendar", page: "Booking", title: "Agendar visita e test-drive" },
+  { path: "/comparar", page: "Compare", title: "Comparar veículos" },
   {
     path: "/",
     page: "Home",

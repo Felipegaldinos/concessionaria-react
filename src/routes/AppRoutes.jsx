@@ -1,3 +1,6 @@
+import Finder from "../pages/FinderPage";
+import Booking from "../pages/BookingPage";
+import Compare from "../pages/ComparePage";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import SiteLayout from "../components/layout/SiteLayout";
@@ -17,6 +20,9 @@ import Contact from "../pages/ContactPage";
 import Privacy from "../pages/PrivacyPage";
 import NotFound from "../pages/NotFoundPage";
 const pages = {
+  Finder,
+  Booking,
+  Compare,
   Home,
   Catalog,
   Vehicle,

@@ -9,9 +9,9 @@ export default function PrivacyPage() {
         individualmente na página de favoritos.
       </p>
       <p>
-        Imagens externas podem receber dados técnicos da conexão. Antes de uma
-        operação real, esta política deverá ser adaptada ao tratamento efetivo
-        de dados.
+        As imagens são arquivos locais do site, sem serviços externos de
+        fotografia. Antes de uma operação real, esta política deverá ser
+        adaptada ao tratamento efetivo de dados.
       </p>
     </Page>
   );

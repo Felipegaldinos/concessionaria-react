@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { photo } from "../../data.js";
 
 export default function Promo({ type }) {
   const content =
@@ -33,8 +32,8 @@ export default function Promo({ type }) {
         <span>{content[0]}</span>
         <img
           loading="lazy"
-          src={photo("photo-1503376780353-7e6692767b70", 500)}
-          alt="Automóvel ilustrativo"
+          src={`/images/institucional/${type === "trade" ? "promo-troca" : type === "help" ? "promo-ajuda" : "promo-finance"}.jpg`}
+          alt="Atendimento ilustrativo na concessionária fictícia Vértice Motors"
         />
       </div>
       <h2>{content[1]}</h2>

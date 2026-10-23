@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import CatalogFilters from "../components/catalog/CatalogFilters.jsx";
 import CarCard from "../components/catalog/CarCard.jsx";
 import Promo from "../components/catalog/Promo.jsx";
@@ -16,8 +16,18 @@ export default function Catalog({ favoritesOnly = false }) {
     toggleFavorite: toggle,
   } = useVehicleContext();
   const go = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const requestedType = searchParams.get("tipo");
+  const type = ["SUV", "Sedã", "Hatch"].includes(requestedType)
+    ? requestedType
+    : "";
+  const setType = (value) =>
+    setSearchParams((previous) => {
+      const next = new URLSearchParams(previous);
+      value ? next.set("tipo", value) : next.delete("tipo");
+      return next;
+    });
   const [brand, setBrand] = useState(""),
-    [type, setType] = useState(""),
     [max, setMax] = useState(""),
     [year, setYear] = useState(""),
     [km, setKm] = useState(""),

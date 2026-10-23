@@ -3,7 +3,6 @@ import InstitutionalPhoto from "../components/institutional/InstitutionalPhoto.j
 import Action from "../components/institutional/Action.jsx";
 import Intro from "../components/institutional/Intro.jsx";
 import Frame from "../components/institutional/Frame.jsx";
-import { photo } from "../data.js";
 import { teamPhotos } from "../data/institutional.js";
 
 export default function Team({}) {
@@ -56,7 +55,7 @@ export default function Team({}) {
     >
       <div className="team-intro">
         <InstitutionalPhoto
-          image="photo-1522071820081-009f0129c71c"
+          image="/images/institucional/equipe-grupo.jpg"
           alt="Profissionais reunidos em equipe, imagem ilustrativa"
           className="team-intro-photo"
           eager

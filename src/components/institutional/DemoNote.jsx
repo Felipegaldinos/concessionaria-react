@@ -4,8 +4,8 @@ export default function DemoNote() {
   return (
     <p className="institution-note">
       Apresentação demonstrativa: estrutura, funções da equipe e serviços
-      representam a proposta da marca fictícia Vértice Motors. Fotografias
-      ilustrativas; não retratam instalações ou colaboradores reais.
+      representam a proposta da marca fictícia Vértice Motors. Imagens geradas
+      por IA; não retratam instalações ou colaboradores reais.
     </p>
   );
 }

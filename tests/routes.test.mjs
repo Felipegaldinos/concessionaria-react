@@ -61,6 +61,10 @@ function render(url) {
 const scenarios = [
   ["/", "nova história"],
   ["/carros", "36</b> veículos"],
+  ["/carros?tipo=SUV", "12</b> veículos"],
+  ["/comparar", "Suas opções, lado a lado."],
+  ["/encontre-meu-carro", "Quanto você pretende investir?"],
+  ["/agendar", "Como podemos receber você?"],
   ["/favoritos", "Seus carros favoritos"],
   ["/carros/1", "Volkswagen T-Cross"],
   ["/carros/36", "Fiat Argo"],
@@ -106,4 +110,88 @@ test("Página de estrutura mantém as quatro imagens locais", () => {
   const html = render("/estrutura");
   for (const name of ["showroom", "recepcao", "avaliacao", "entrega"])
     assert.ok(html.includes(`/images/estrutura/${name}.png`));
+});
+
+test("Home oferece filtros por perfil e cada carro tem uma imagem própria", async () => {
+  const html = render("/");
+  assert.match(html, /role="tablist"/);
+  assert.ok(html.includes("/carros?tipo=Hatch"));
+  const { cars } = await server.ssrLoadModule("/src/data/vehicles.js");
+  assert.equal(new Set(cars.map((car) => car.image)).size, cars.length);
+  assert.ok(cars.every((car) => car.image.startsWith("/images/estoque/")));
+});
+import { existsSync, readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+
+test("Todas as novas imagens estão no projeto e o estoque não repete arquivos", async () => {
+  const manifest = JSON.parse(
+    readFileSync(
+      new URL("../docs/image-manifest.json", import.meta.url),
+      "utf8",
+    ),
+  );
+  assert.equal(manifest.length, 50);
+  const hashes = [];
+  for (const asset of manifest) {
+    const file = new URL("../public" + asset.url, import.meta.url);
+    assert.ok(existsSync(file), "Imagem ausente: " + asset.url);
+    const bytes = readFileSync(file);
+    assert.ok(bytes.length > 10000, "Imagem vazia: " + asset.url);
+    hashes.push(createHash("sha256").update(bytes).digest("hex"));
+  }
+  assert.equal(
+    new Set(hashes).size,
+    manifest.length,
+    "Existem imagens duplicadas",
+  );
+});
+
+test("As páginas usam apenas imagens locais da concessionária fictícia", () => {
+  for (const url of [
+    "/",
+    "/carros",
+    "/equipe",
+    "/quem-somos",
+    "/troca",
+    "/lojas",
+  ]) {
+    const html = render(url);
+    for (const [, src] of html.matchAll(/<img[^>]+src="([^"]+)"/g))
+      assert.ok(src.startsWith("/images/"), "Imagem externa: " + src);
+  }
+});
+
+test("Detalhes incluem as três imagens e o agendamento identifica o veículo", () => {
+  const html = render("/carros/1");
+  assert.ok(html.includes("/images/galeria/veiculo-01-rear.jpg"));
+  assert.ok(html.includes("/images/galeria/veiculo-01-interior.jpg"));
+  assert.ok(html.includes("/agendar?veiculo=1&amp;tipo=test-drive"));
+  assert.ok(html.includes("Conservação e pontos de atenção"));
+  const booking = render("/agendar?veiculo=1&amp;tipo=test-drive");
+  assert.ok(booking.includes("Volkswagen T-Cross"));
+  assert.ok(booking.includes("Nenhum horário é reservado automaticamente"));
+});
+
+test("Os 36 veículos têm galeria com três vistas e 72 imagens novas distintas", async () => {
+  const manifest = JSON.parse(
+    readFileSync(
+      new URL("../docs/gallery-manifest.json", import.meta.url),
+      "utf8",
+    ),
+  );
+  assert.equal(manifest.length, 72);
+  const hashes = [];
+  for (const asset of manifest) {
+    const path = new URL("../public" + asset.url, import.meta.url);
+    assert.ok(existsSync(path), asset.url);
+    hashes.push(createHash("sha256").update(readFileSync(path)).digest("hex"));
+  }
+  assert.equal(new Set(hashes).size, 72);
+  const { cars } = await server.ssrLoadModule("/src/data/vehicles.js");
+  for (const car of cars) {
+    assert.equal(car.gallery.length, 3);
+    assert.equal(new Set(car.gallery.map((p) => p.src)).size, 3);
+    for (const p of car.gallery)
+      assert.ok(existsSync(new URL("../public" + p.src, import.meta.url)));
+  }
 });

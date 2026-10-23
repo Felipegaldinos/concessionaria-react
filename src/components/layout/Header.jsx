@@ -11,6 +11,8 @@ export default function Header() {
   const nav = [
     ["Início", "/"],
     ["Comprar", "/carros"],
+    ["Encontre meu carro", "/encontre-meu-carro"],
+    ["Agendar", "/agendar"],
     ["Equipe", "/equipe"],
     ["Estrutura", "/estrutura"],
     ["Serviços", "/servicos"],

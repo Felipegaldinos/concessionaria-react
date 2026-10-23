@@ -1,3 +1,4 @@
+import CompareBar from "../catalog/CompareBar";
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
@@ -11,6 +12,7 @@ export default function SiteLayout() {
       <main>
         <Outlet />
       </main>
+      <CompareBar />
       <Footer />
     </>
   );

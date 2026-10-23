@@ -4,7 +4,6 @@ import Intro from "../components/institutional/Intro.jsx";
 import Frame from "../components/institutional/Frame.jsx";
 import CTA from "../components/institutional/CTA.jsx";
 import Journey from "../components/institutional/Journey.jsx";
-import { photo } from "../data.js";
 import { values } from "../data/institutional.js";
 
 export default function Company({}) {
@@ -16,8 +15,8 @@ export default function Company({}) {
       <section className="inst-split">
         <div className="inst-photo">
           <img
-            src={photo("photo-1449965408869-eaa3f722e40d", 1000)}
-            alt="Vista de uma viagem de carro, imagem ilustrativa"
+            src="/images/institucional/sobre-historia.jpg"
+            alt="Vista do showroom fictício Vértice Motors"
           />
           <span>Escolhas que acompanham a vida.</span>
         </div>
