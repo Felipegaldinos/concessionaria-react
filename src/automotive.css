@@ -880,3 +880,47 @@
     margin-bottom: 13px;
   }
 }
+/* Benefícios passam automaticamente apenas no celular; também permitem deslizar. */
+.benefits-carousel {
+  position: relative;
+  background: #073f31;
+}
+@media (max-width: 600px) {
+  .benefits-carousel .inst-principles {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    overscroll-behavior-x: contain;
+  }
+  .benefits-carousel .inst-principles::-webkit-scrollbar {
+    display: none;
+  }
+  .benefits-carousel .inst-principles > span {
+    flex: 0 0 100%;
+    min-width: 0;
+    min-height: 70px;
+    padding: 18px 24px;
+    justify-content: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  .benefits-carousel .inst-principles b {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .benefits-carousel .inst-principles .auto-icon {
+    width: 27px;
+    height: 27px;
+  }
+  .benefits-carousel .inst-principles:focus-visible {
+    outline: 2px solid var(--lime);
+    outline-offset: -3px;
+  }
+}

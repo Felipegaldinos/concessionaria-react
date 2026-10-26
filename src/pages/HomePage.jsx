@@ -6,7 +6,7 @@ import DemoNote from "../components/institutional/DemoNote.jsx";
 import CTA from "../components/institutional/CTA.jsx";
 import ServicesGrid from "../components/institutional/ServicesGrid.jsx";
 import Journey from "../components/institutional/Journey.jsx";
-import AutoIcon from "../components/common/AutoIcon.jsx";
+import BenefitsCarousel from "../components/institutional/BenefitsCarousel.jsx";
 import BrandStrip from "../components/institutional/BrandStrip.jsx";
 import StructureShowcase from "../components/institutional/StructureShowcase.jsx";
 
@@ -42,28 +42,7 @@ export default function Home() {
           Concessionária fictícia · Imagem gerada por IA
         </span>
       </section>
-      <div className="inst-principles container">
-        <span>
-          <AutoIcon type="car" />
-          <b>Novos e seminovos</b>
-        </span>
-        <span>
-          <AutoIcon type="gauge" />
-          <b>Financiamento facilitado</b>
-        </span>
-        <span>
-          <AutoIcon type="key" />
-          <b>Entrega imediata</b>
-        </span>
-        <span>
-          <AutoIcon type="wheel" />
-          <b>Troca com avaliação justa</b>
-        </span>
-        <span>
-          <AutoIcon type="key" />
-          <b>Pós-venda especializado</b>
-        </span>
-      </div>
+      <BenefitsCarousel />
       <div className="container institutional home-institutional">
         <ProfileFinder />
         <div className="new-experiences">
