@@ -5,6 +5,7 @@ import CarCard from "../components/catalog/CarCard.jsx";
 import Promo from "../components/catalog/Promo.jsx";
 import Breadcrumb from "../components/common/Breadcrumb.jsx";
 import ContactBanner from "../components/common/ContactBanner.jsx";
+import AutomotiveBanner from "../components/common/AutomotiveBanner.jsx";
 import { cars } from "../data/vehicles.js";
 import { useVehicleContext } from "../context/VehicleContext.jsx";
 
@@ -78,11 +79,18 @@ export default function Catalog({ favoritesOnly = false }) {
       <Breadcrumb
         title={favoritesOnly ? "Favoritos" : "Carros usados / Natal"}
       />
-      <h1>
-        {favoritesOnly
-          ? "Seus carros favoritos"
-          : "Carros usados e seminovos para comprar em Natal e região"}
-      </h1>
+      <AutomotiveBanner
+        title={
+          favoritesOnly
+            ? "Seus carros favoritos"
+            : "Carros usados e seminovos para comprar em Natal e região"
+        }
+        subtitle={
+          favoritesOnly
+            ? "Suas escolhas reunidas para comparar com calma."
+            : "Compare modelos, encontre seu perfil e prepare sua visita."
+        }
+      />
       <div className="catalog-layout">
         <CatalogFilters
           {...{

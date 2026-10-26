@@ -1,0 +1,473 @@
+/* Continuidade da home nas páginas internas. */
+.interior-institutional {
+  --interior-radius: 16px;
+}
+.interior-institutional > .inst-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 32px;
+  margin: 30px 0;
+  border-radius: 16px;
+  background: #edf3e7;
+}
+.interior-institutional > .inst-section:after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: -85px;
+  width: 230px;
+  height: 230px;
+  background: url("/images/decoracao/pneu.svg") center / contain no-repeat;
+  opacity: 0.055;
+  z-index: -1;
+  pointer-events: none;
+}
+.interior-institutional .inst-heading {
+  margin-bottom: 24px;
+}
+.interior-institutional .inst-heading h2 {
+  font-size: clamp(25px, 2.6vw, 34px);
+  line-height: 1.18;
+}
+.interior-institutional .inst-tag {
+  font-size: 10px;
+  letter-spacing: 1.8px;
+}
+.interior-institutional .purpose-grid {
+  gap: 20px;
+}
+.interior-institutional .purpose-grid article {
+  border-radius: 16px;
+  padding: 30px;
+}
+.interior-institutional .purpose-grid article:first-child {
+  background:
+    linear-gradient(100deg, #e7efdfef, #e7efdfc9),
+    url("/images/estrutura/recepcao.png") center / cover;
+}
+.interior-institutional .purpose-grid article:last-child {
+  background:
+    linear-gradient(100deg, #033b2ff2, #033b2fbe),
+    url("/images/estrutura/entrega.png") center / cover;
+}
+.interior-institutional .purpose-grid h2 {
+  font-size: 27px;
+  line-height: 1.2;
+}
+.interior-institutional .inst-values {
+  padding: 0;
+  background: transparent;
+  gap: 16px;
+}
+.interior-institutional .inst-values article {
+  background: #fbfdf8;
+  border: 1px solid #dce7d4;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 5px 16px #123b2e08;
+}
+.interior-institutional .inst-values .auto-icon {
+  display: block;
+  color: #276c42;
+  margin-bottom: 18px;
+  width: 34px;
+  height: 34px;
+}
+.interior-institutional .inst-values h3 {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.interior-institutional .inst-values p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.interior-institutional .inst-values:before {
+  content: none;
+}
+.interior-institutional .journey {
+  gap: 22px;
+}
+.interior-institutional .journey h3 {
+  font-size: 20px;
+}
+/* Equipe: imagem e texto unidos, cartões mais leves. */
+.interior-institutional .team-intro {
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #073f31;
+  align-items: stretch;
+}
+.team-intro .team-intro-photo {
+  min-height: 330px;
+  height: 100%;
+  border-radius: 0;
+}
+.team-intro > div {
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    linear-gradient(90deg, #033b2feb, #033b2fd6),
+    url("/images/estrutura/showroom.png") right center / cover;
+}
+.team-intro > div h2 {
+  color: #f3f8ee;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.team-intro > div p,
+.team-intro > div small {
+  color: #dcebd4;
+}
+.interior-institutional .team-grid {
+  gap: 22px;
+}
+.interior-institutional .team-grid article {
+  padding: 0 24px 24px;
+  overflow: hidden;
+  background: #fafcf7;
+}
+.interior-institutional .team-grid article:nth-child(2n) {
+  background: #073f31;
+}
+.interior-institutional .team-grid .team-role-photo {
+  margin: 0 -24px 23px;
+  width: calc(100% + 48px);
+  height: 270px;
+  border-radius: 0;
+}
+.interior-institutional .team-grid h2 {
+  font-size: 22px;
+}
+.interior-institutional .team-culture {
+  background:
+    linear-gradient(100deg, #e9f1e4f2, #e9f1e4db 70%, #e9f1e488),
+    url("/images/institucional/servicos-roda.jpg") right center / cover;
+  padding: 34px;
+}
+/* Estrutura: fotos maiores, texto compacto e contraste alternado. */
+.interior-institutional .structure-grid {
+  gap: 22px;
+}
+.interior-institutional .structure-grid article {
+  background: #f7faf2;
+}
+.interior-institutional .structure-grid article:nth-child(2n) {
+  background: #073f31;
+}
+.interior-institutional .structure-photo {
+  height: 285px;
+}
+.interior-institutional .structure-grid article > div:last-child {
+  padding: 24px;
+}
+.interior-institutional .structure-grid h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.interior-institutional .visit-plan {
+  background:
+    linear-gradient(90deg, #e7f0e0fa, #e7f0e0e6 50%, #e7f0e09c),
+    url("/images/estrutura/recepcao.png") center / cover;
+  border: 1px solid #d8e4d1;
+}
+/* Serviços: mesmo fundo e escala de cartões da home. */
+.interior-services {
+  margin: 30px 0;
+  padding: 30px;
+  border-radius: 16px;
+  background:
+    linear-gradient(90deg, #eaf2e4f2, #eaf2e4d6 55%, #eaf2e466),
+    url("/images/institucional/servicos-roda.jpg") center / cover;
+}
+.interior-services .inst-services {
+  gap: 14px;
+}
+.interior-services .inst-services article {
+  padding: 20px 18px 16px;
+  background: #fafcf5f5;
+  border-color: #e1ebd8;
+  box-shadow: 0 5px 16px #123b2e12;
+}
+.interior-services .service-number {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+.interior-services .service-number .auto-icon {
+  width: 22px;
+  height: 22px;
+}
+.interior-services .inst-services h3 {
+  font-size: 16px;
+}
+.interior-services .inst-services p {
+  font-size: 12px;
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+.interior-services .inst-services a {
+  font-size: 11px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.interior-institutional .support-grid {
+  gap: 16px;
+}
+.interior-institutional .support-grid article {
+  padding: 24px;
+  background: #f9fcf5;
+  border: 1px solid #dde8d4;
+}
+.interior-institutional .support-grid article:nth-child(2n) {
+  background: #073f31;
+}
+.interior-institutional .support-grid h3 {
+  font-size: 19px;
+}
+.interior-institutional .support-notes {
+  border-left: 3px solid #90b56e;
+  border-radius: 12px;
+  background: #f6f9f1;
+}
+/* Formulários e utilitários: superfícies claras com apoio fotográfico. */
+.inner-page .panel {
+  border-color: #d4e1cd;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px #17452c09;
+  background: #fcfdf9;
+}
+.inner-page .panel h2 {
+  font-size: 25px;
+  line-height: 1.25;
+}
+.inner-page .panel input,
+.inner-page .panel select,
+.inner-page .panel textarea {
+  background: white;
+  border-color: #c8d7bd;
+}
+.inner-page .panel input:focus-visible,
+.inner-page .panel select:focus-visible,
+.inner-page .panel textarea:focus-visible {
+  outline: 2px solid #2b7653;
+  outline-offset: 2px;
+}
+.inner-page .green-panel {
+  border-radius: 16px;
+  background:
+    linear-gradient(100deg, #033b2ff2, #033b2fc9),
+    url("/images/institucional/servicos-roda.jpg") right center / cover;
+}
+.inner-page .simulation {
+  border-radius: 12px;
+  background: #e8f1df;
+  border: 1px solid #d1e0c4;
+}
+.contact-scene {
+  display: block;
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 24px;
+}
+.contact-introduction h2 {
+  font-size: 29px;
+}
+.inner-page .contact-box {
+  border-radius: 12px;
+  background: #e7f0df;
+  padding: 24px;
+  border-left: 3px solid #7ea65d;
+}
+.inner-page[data-page="/troca"] .steps {
+  padding: 22px 25px 22px 42px;
+  background: #e8f0e0;
+  border-radius: 12px;
+  border: 1px solid #d3e1c7;
+}
+.inner-page .feature-image,
+.inner-page .store-photo {
+  border-radius: 16px;
+}
+.inner-page .store-photo {
+  overflow: hidden;
+}
+.inner-page[data-page="/lojas"] .institution-grid > .panel {
+  background: linear-gradient(135deg, #f8fbf3, #e9f1e3);
+}
+.inner-page .faq {
+  padding: 26px;
+  border-radius: 16px;
+  background:
+    linear-gradient(100deg, #ecf3e6fa, #ecf3e6e6),
+    url("/images/institucional/servicos-roda.jpg") right center / cover;
+}
+.inner-page .faq details {
+  border: 1px solid #d4e1c9;
+  background: #fcfdf8;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.inner-page .faq details:last-child {
+  margin-bottom: 0;
+}
+.inner-page .faq details[open] {
+  border-color: #80a86d;
+  box-shadow: 0 5px 18px #153e2610;
+}
+.inner-page .faq summary {
+  min-height: 55px;
+  align-content: center;
+}
+.inner-page .finder-shell {
+  background: linear-gradient(120deg, #f7faf2, #eaf2e3);
+  border-color: #d3e1c8;
+  border-radius: 16px;
+}
+.inner-page .finder-option {
+  background: #fff;
+  border-color: #d1dfc7;
+}
+.inner-page .finder-option.selected {
+  background: #e0efcf;
+  border-color: #4c8857;
+}
+.inner-page .booking-notice {
+  background: #edf4e5;
+  border: 1px solid #d4e2c9;
+  border-radius: 12px;
+}
+.inner-page .booking-preview {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px #123b2e12;
+}
+.inner-page .booking-preview img {
+  object-fit: cover;
+}
+.inner-page .booking-confirmation {
+  border-radius: 16px;
+  border-color: #c8dbbc;
+}
+.inner-page .empty {
+  border-radius: 16px;
+  background:
+    linear-gradient(110deg, #e9f1e3f5, #e9f1e3de),
+    url("/images/estrutura/showroom.png") center / cover;
+}
+.inner-page .detail-panel {
+  background:
+    linear-gradient(120deg, #033b2ff5, #033b2fe6),
+    url("/images/institucional/servicos-roda.jpg") right center / cover;
+  border-radius: 16px;
+}
+.catalog .automotive-banner {
+  min-height: 185px;
+  margin-bottom: 28px;
+}
+.catalog .automotive-banner-copy {
+  width: min(720px, 80%);
+}
+.catalog .automotive-banner h1 {
+  font-size: clamp(25px, 2.7vw, 34px);
+}
+.catalog .automotive-banner p {
+  color: #e3efdb;
+  font-size: 14px;
+}
+.catalog .filters {
+  border-radius: 12px;
+}
+.catalog .car-card {
+  border-color: #d5e1cc;
+  box-shadow: 0 4px 13px #153e2609;
+}
+@media (max-width: 850px) {
+  .interior-services .inst-services,
+  .interior-institutional .inst-values {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .interior-institutional .team-intro {
+    grid-template-columns: 1fr 1fr;
+  }
+  .team-intro > div {
+    padding: 24px;
+  }
+  .interior-institutional .journey {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .interior-institutional > .inst-section,
+  .interior-institutional .team-culture,
+  .interior-services {
+    padding: 24px 18px;
+  }
+  .interior-institutional .team-intro,
+  .interior-institutional .inst-values,
+  .interior-institutional .purpose-grid,
+  .interior-institutional .team-grid,
+  .interior-institutional .structure-grid,
+  .interior-services .inst-services,
+  .interior-institutional .support-grid,
+  .interior-institutional .journey {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .team-intro .team-intro-photo {
+    min-height: 0;
+    height: 240px;
+  }
+  .team-intro > div {
+    padding: 26px 22px;
+  }
+  .team-intro > div h2 {
+    font-size: 27px;
+  }
+  .interior-institutional .team-grid .team-role-photo {
+    height: 285px;
+  }
+  .interior-institutional .structure-photo {
+    height: 230px;
+  }
+  .interior-institutional .inst-heading h2 {
+    font-size: 28px;
+  }
+  .interior-institutional .purpose-grid article {
+    padding: 24px;
+  }
+  .inner-page .faq {
+    padding: 16px;
+  }
+  .inner-page .panel {
+    padding: 23px;
+  }
+  .contact-scene {
+    height: 220px;
+  }
+  .catalog .automotive-banner {
+    min-height: 230px;
+    padding: 26px 22px;
+  }
+  .catalog .automotive-banner-copy {
+    width: 100%;
+  }
+  .catalog .automotive-banner h1 {
+    font-size: 27px;
+  }
+}
+.inner-page .green-panel p,
+.inner-page .green-panel li {
+  color: #e2eedb;
+}
+.inner-page .green-panel .eyebrow {
+  color: var(--lime);
+}

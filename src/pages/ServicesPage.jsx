@@ -11,7 +11,9 @@ export default function Services({}) {
       title="Serviços e suporte"
       subtitle="Informação e orientação para cada momento da sua escolha."
     >
-      <ServicesGrid />
+      <section className="interior-services">
+        <ServicesGrid />
+      </section>
       <section className="inst-section support-section">
         <Intro
           tag="SUPORTE AO CLIENTE"

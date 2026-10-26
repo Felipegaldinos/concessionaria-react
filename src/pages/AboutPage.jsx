@@ -5,6 +5,7 @@ import Frame from "../components/institutional/Frame.jsx";
 import CTA from "../components/institutional/CTA.jsx";
 import Journey from "../components/institutional/Journey.jsx";
 import { values } from "../data/institutional.js";
+import AutoIcon from "../components/common/AutoIcon.jsx";
 
 export default function Company({}) {
   return (
@@ -65,7 +66,7 @@ export default function Company({}) {
         <div className="inst-values">
           {values.map(([t, p], i) => (
             <article key={t}>
-              <span>0{i + 1}</span>
+              <AutoIcon type={["gauge", "headset", "key", "car"][i]} />
               <h3>{t}</h3>
               <p>{p}</p>
             </article>

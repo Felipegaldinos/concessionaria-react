@@ -14,7 +14,13 @@ export default function Contact() {
       subtitle="Conte com a gente para encontrar sua próxima direção."
     >
       <div className="institution-grid">
-        <div>
+        <div className="contact-introduction">
+          <img
+            src="/images/institucional/home-consultoria.jpg"
+            alt="Atendimento ilustrativo no showroom Vértice Motors"
+            className="contact-scene"
+            loading="lazy"
+          />
           <h2>Vamos conversar?</h2>
           <p>
             Conte o que você procura ou envie suas dúvidas usando nosso

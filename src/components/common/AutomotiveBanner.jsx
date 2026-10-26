@@ -11,6 +11,12 @@ const scenes = {
   "/troca": "/images/institucional/troca-atendimento.jpg",
   "/agendar": "/images/estrutura/entrega.png",
   "/contato": "/images/estrutura/recepcao.png",
+  "/financiamento": "/images/institucional/servicos-roda.jpg",
+  "/ajuda": "/images/institucional/home-consultoria.jpg",
+  "/encontre-meu-carro": "/images/estoque/veiculo-19.jpg",
+  "/comparar": "/images/estrutura/showroom.png",
+  "/carros": "/images/estrutura/showroom.png",
+  "/favoritos": "/images/estrutura/entrega.png",
 };
 export default function AutomotiveBanner({
   title,
