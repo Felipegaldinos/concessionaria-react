@@ -122,7 +122,7 @@ export default function Home() {
               alt="Equipe fictícia da Vértice Motors no showroom"
             />
           </div>
-          <div>
+          <div className="home-team-copy">
             <Intro
               tag="PESSOAS QUE FAZEM A DIFERENÇA"
               title="Uma equipe para ouvir, orientar e acompanhar."
@@ -131,7 +131,8 @@ export default function Home() {
             <Action to="/equipe">Conheça a equipe</Action>
           </div>
         </section>
-        <section className="inst-section">
+        <section className="inst-section home-journey">
+          <div className="journey-wheel-decoration" aria-hidden="true" />
           <Intro
             tag="ANTES, DURANTE E DEPOIS"
             title="Sua jornada, com os próximos passos claros."

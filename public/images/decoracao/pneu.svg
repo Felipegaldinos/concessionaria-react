@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" stroke="#235438">
+ <defs><pattern id="rubber" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 2h9m-9 6h9" stroke-width="4"/></pattern></defs>
+ <circle cx="150" cy="150" r="139" fill="#235438" stroke="none"/>
+ <circle cx="150" cy="150" r="134" stroke="#e6eedf" stroke-width="3"/>
+ <circle cx="150" cy="150" r="126" stroke="#e6eedf" stroke-width="1.5"/>
+ <circle cx="150" cy="150" r="111" fill="#e6eedf" stroke="#e6eedf" stroke-width="4"/>
+ <circle cx="150" cy="150" r="103" stroke-width="4"/>
+ <circle cx="150" cy="150" r="96" stroke-width="2"/>
+ <g fill="#235438" stroke="none" id="spokes">
+  <path id="spoke" d="m141 130-16-75 11-5 14 67 14-67 11 5-16 75Z"/>
+  <use href="#spoke" transform="rotate(72 150 150)"/><use href="#spoke" transform="rotate(144 150 150)"/><use href="#spoke" transform="rotate(216 150 150)"/><use href="#spoke" transform="rotate(288 150 150)"/>
+ </g>
+ <circle cx="150" cy="150" r="27" fill="#e6eedf" stroke-width="3"/><circle cx="150" cy="150" r="12" stroke-width="3"/>
+ <g fill="#235438" stroke="none"><circle cx="150" cy="129" r="3"/><circle cx="170" cy="144" r="3"/><circle cx="162" cy="167" r="3"/><circle cx="138" cy="167" r="3"/><circle cx="130" cy="144" r="3"/></g>
+ <circle cx="150" cy="150" r="119" stroke="#e6eedf" stroke-width="5" stroke-dasharray="2 6"/>
+ <circle cx="150" cy="150" r="138" stroke="#e6eedf" stroke-width="4" stroke-dasharray="3 7"/>
+</svg>

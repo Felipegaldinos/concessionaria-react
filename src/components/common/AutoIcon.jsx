@@ -3,6 +3,28 @@ import React from "react";
 // Ícones vetoriais próprios, sem dependências e com decoração fora da leitura assistiva.
 export default function AutoIcon({ type = "car", className = "" }) {
   const paths = {
+    sliders: (
+      <>
+        <path d="M3 6h5m4 0h9M3 12h11m4 0h3M3 18h3m4 0h11" />
+        <circle cx="10" cy="6" r="2" />
+        <circle cx="16" cy="12" r="2" />
+        <circle cx="8" cy="18" r="2" />
+      </>
+    ),
+    calculator: (
+      <>
+        <rect x="5" y="2" width="14" height="20" rx="2" />
+        <path d="M8 5h8v4H8zM8 12h1m3 0h1m3 0h0M8 16h1m3 0h1m3 0h0M8 19h1m3 0h1m3 0h0" />
+      </>
+    ),
+    headset: (
+      <>
+        <path d="M4 13V10a8 8 0 0 1 16 0v3M20 17v1a3 3 0 0 1-3 3h-3" />
+        <rect x="2" y="10" width="5" height="9" rx="2" />
+        <rect x="17" y="10" width="5" height="9" rx="2" />
+        <rect x="10" y="19" width="4" height="3" rx="1" />
+      </>
+    ),
     car: (
       <>
         <path d="m5 10 2-5h10l2 5M3 10h18v8H3zM6 18v2m12-2v2M6 13h2m8 0h2" />

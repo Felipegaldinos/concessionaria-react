@@ -1,4 +1,5 @@
 import React from "react";
+import AutoIcon from "../common/AutoIcon.jsx";
 
 export default function Journey() {
   return (
@@ -22,7 +23,9 @@ export default function Journey() {
         ],
       ].map(([t, p], i) => (
         <article key={t}>
-          <span>0{i + 1}</span>
+          <div className="journey-step-mark">
+            <AutoIcon type={["car", "sliders", "calculator", "headset"][i]} />
+          </div>
           <h3>{t}</h3>
           <p>{p}</p>
         </article>

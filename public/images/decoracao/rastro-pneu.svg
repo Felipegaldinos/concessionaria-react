@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 420">
+ <defs><pattern id="track" width="180" height="42" patternUnits="userSpaceOnUse">
+ <g fill="#235438">
+ <path d="M5 4h25l27 17v14L30 19H5zM35 2h27l20 13v15L62 17 35 1zM98 15l20-13h27l-27 15-20 13zM123 21l27-17h25v15h-25l-27 16z"/>
+ <path d="M5 25h20l28 17H29L5 40zM127 42l28-17h20v15l-24 2zM86 0h8v33h-8z"/>
+ </g></pattern></defs>
+ <path d="M3 0h174v420H3z" fill="url(#track)"/>
+ <path d="M1 0v420M179 0v420" stroke="#235438" stroke-width="2" stroke-dasharray="11 5"/>
+</svg>
