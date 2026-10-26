@@ -1,100 +1,70 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useVehicleContext } from "../../context/VehicleContext";
-const profiles = [
-  {
-    name: "Cidade",
-    type: "Hatch",
-    icon: "↗",
-    title: "Prático para todos os dias.",
-    text: "Compactos para encarar os trajetos da semana com mais leveza.",
-  },
-  {
-    name: "Família",
-    type: "SUV",
-    icon: "◈",
-    title: "Espaço para os seus planos.",
-    text: "Explore SUVs para levar a família e tudo que acompanha vocês.",
-  },
-  {
-    name: "Conforto",
-    type: "Sedã",
-    icon: "≈",
-    title: "Uma nova forma de viajar.",
-    text: "Sedãs para quem valoriza conforto na rotina e na estrada.",
-  },
-];
+import { cars } from "../../data/vehicles";
+import { money } from "../../data";
+
 export default function ProfileFinder() {
-  const { setQuery } = useVehicleContext();
-  const [selected, setSelected] = useState(0);
-  const profile = profiles[selected];
+  const { setQuery, favorites, toggleFavorite } = useVehicleContext();
+  const car = cars[0];
+  const saved = favorites.includes(car.id);
   return (
-    <section className="profile-finder">
-      <div className="profile-intro">
-        <span className="inst-tag">UM CARRO COM O SEU JEITO</span>
-        <h2>
+    <section className="next-direction" aria-labelledby="next-direction-title">
+      <div className="direction-copy">
+        <span className="inst-tag">SEU PRÓXIMO CARRO</span>
+        <h2 id="next-direction-title">
           Qual é a sua
           <br />
           próxima direção?
         </h2>
-        <p>Comece pela sua rotina. A gente ajuda a encontrar o caminho.</p>
-      </div>
-      <div className="profile-interactive">
-        <div role="tablist" aria-label="Seu perfil de uso">
-          {profiles.map((p, i) => (
-            <button
-              key={p.name}
-              role="tab"
-              id={"profile-tab-" + i}
-              aria-selected={selected === i}
-              aria-controls="profile-panel"
-              onClick={() => setSelected(i)}
-              tabIndex={selected === i ? 0 : -1}
-              onKeyDown={(e) => {
-                if (
-                  ["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)
-                ) {
-                  e.preventDefault();
-                  const next =
-                    e.key === "Home"
-                      ? 0
-                      : e.key === "End"
-                        ? 2
-                        : (selected + (e.key === "ArrowRight" ? 1 : 2)) % 3;
-                  setSelected(next);
-                  document.getElementById("profile-tab-" + next)?.focus();
-                }
-              }}
-            >
-              {p.name}
-            </button>
-          ))}
-        </div>
-        <div
-          id="profile-panel"
-          role="tabpanel"
-          aria-labelledby={"profile-tab-" + selected}
+        <p>
+          Temos o carro ideal para cada estilo, seja para o dia a dia, para a
+          família ou para o trabalho. Aproveite nossas ofertas especiais e
+          encontre o modelo que combina com você.
+        </p>
+        <Link
+          className="btn direction-stock"
+          to="/carros"
+          onClick={() => setQuery("")}
         >
-          <span className="profile-icon" aria-hidden="true">
-            {profile.icon}
-          </span>
-          <h3>{profile.title}</h3>
-          <p>{profile.text}</p>
-          <Link
-            onClick={() => setQuery("")}
-            to={"/carros?tipo=" + encodeURIComponent(profile.type)}
-            className="btn"
-          >
-            Explorar{" "}
-            {profile.type === "SUV"
-              ? "SUVs"
-              : profile.type === "Sedã"
-                ? "sedãs"
-                : "hatches"}{" "}
-            <span aria-hidden="true">↗</span>
-          </Link>
-        </div>
+          Ver todos os veículos <span aria-hidden="true">↗</span>
+        </Link>
       </div>
+      <article className="direction-car">
+        <div className="direction-photo">
+          <img
+            src={car.image}
+            alt={`${car.brand} ${car.name} no showroom Vértice Motors, imagem ilustrativa`}
+            loading="lazy"
+          />
+          <span className="direction-badge">Destaque da semana</span>
+          <button
+            className="direction-favorite"
+            type="button"
+            aria-label={`${saved ? "Remover dos" : "Salvar nos"} favoritos: ${car.brand} ${car.name}`}
+            aria-pressed={saved}
+            onClick={() => toggleFavorite(car.id)}
+          >
+            {saved ? "♥" : "♡"}
+          </button>
+        </div>
+        <div className="direction-car-info">
+          <h3>
+            {car.brand} {car.name} {car.version}
+          </h3>
+          <p>
+            {car.year} <span aria-hidden="true">|</span>{" "}
+            {car.km.toLocaleString("pt-BR")} km{" "}
+            <span aria-hidden="true">|</span> {car.gear}
+          </p>
+          <div className="direction-car-bottom">
+            <strong>{money(car.price)}</strong>
+            <Link className="btn" to={`/carros/${car.id}`}>
+              Ver detalhes <span aria-hidden="true">↗</span>
+            </Link>
+          </div>
+        </div>
+      </article>
     </section>
   );
 }

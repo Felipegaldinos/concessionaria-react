@@ -6,6 +6,7 @@ import "./styles.css";
 import "./institutional.css";
 import "./theme.css";
 import "./experiences.css";
+import "./automotive.css";
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>

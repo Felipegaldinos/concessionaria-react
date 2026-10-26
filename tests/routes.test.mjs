@@ -112,10 +112,11 @@ test("Página de estrutura mantém as quatro imagens locais", () => {
     assert.ok(html.includes(`/images/estrutura/${name}.png`));
 });
 
-test("Home oferece filtros por perfil e cada carro tem uma imagem própria", async () => {
+test("Home apresenta veículo em destaque e cada carro tem uma imagem própria", async () => {
   const html = render("/");
-  assert.match(html, /role="tablist"/);
-  assert.ok(html.includes("/carros?tipo=Hatch"));
+  assert.ok(html.includes("Destaque da semana"));
+  assert.ok(html.includes("Ver todos os veículos"));
+  assert.ok(html.includes('href="/carros/1"'));
   const { cars } = await server.ssrLoadModule("/src/data/vehicles.js");
   assert.equal(new Set(cars.map((car) => car.image)).size, cars.length);
   assert.ok(cars.every((car) => car.image.startsWith("/images/estoque/")));

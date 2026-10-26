@@ -1,0 +1,711 @@
+/* Cenários e grafismos automotivos compartilhados. */
+.auto-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.automotive-banner {
+  isolation: isolate;
+  min-height: 235px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      #032f26f5 0%,
+      #063a2ee6 39%,
+      #063a2e80 70%,
+      #063a2e20
+    ),
+    var(--automotive-image) center 55% / cover;
+}
+.automotive-banner:after {
+  content: none;
+}
+.automotive-banner-copy {
+  width: min(660px, 75%);
+}
+.automotive-banner .inst-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.automotive-banner .inst-tag .auto-icon {
+  width: 23px;
+  height: 23px;
+}
+.automotive-banner h1 {
+  margin: 0 0 18px;
+  font-size: clamp(29px, 3.5vw, 44px);
+  line-height: 1.12;
+}
+.automotive-banner p {
+  color: #edf3e8;
+  margin-bottom: 0;
+}
+.home-institutional > .structure-highlight {
+  background:
+    linear-gradient(100deg, #032e25ed, #04392bd4 48%, #042f2580),
+    url("/images/estrutura/showroom.png") center / cover;
+}
+.structure-highlight .space-preview article {
+  background: #073c30e8;
+  border: 1px solid #9fd56566;
+  border-left: 2px solid var(--lime);
+}
+.structure-highlight .space-preview article > span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.inst-cta {
+  background:
+    linear-gradient(90deg, #042f26f2, #043b2bba 48%, #043b2b9c),
+    url("/images/estrutura/entrega.png") center 58% / cover;
+  border: 1px solid #336a50;
+}
+.inst-cta:before {
+  content: none;
+}
+.institutional .inst-cta p {
+  color: #e1ecda;
+}
+.inst-cta h2 {
+  text-shadow: 0 2px 14px #002a20;
+}
+.inst-cta .inst-actions {
+  background: #043b2bbd;
+  border-radius: 16px;
+  padding: 18px;
+}
+.new-experiences {
+  background:
+    linear-gradient(100deg, #04382cf5, #04382ce8 48%, #04382c80),
+    url("/images/estoque/veiculo-19.jpg") center 60% / cover;
+}
+.visit-plan {
+  background:
+    linear-gradient(90deg, #e4efdf 0%, #e4efdfed 55%, #e4efdf80),
+    url("/images/estrutura/recepcao.png") center / cover;
+}
+.green-panel {
+  background:
+    linear-gradient(110deg, #033c2ff5, #033c2fd9),
+    url("/images/estoque/veiculo-01.jpg") center / cover;
+}
+.inst-services .service-number {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+}
+.inst-services .service-number .auto-icon {
+  width: 30px;
+  height: 30px;
+}
+.inst-values {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.inst-values:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 200px;
+  height: 340px;
+  right: -110px;
+  top: -70px;
+  transform: rotate(-25deg);
+  border: 28px solid #47753d15;
+  border-radius: 100px;
+  background: repeating-linear-gradient(
+    40deg,
+    transparent 0 12px,
+    #47753d12 12px 18px,
+    transparent 18px 28px
+  );
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .automotive-banner {
+    min-height: 255px;
+    padding: 28px 22px;
+    background-position:
+      center,
+      right center;
+  }
+  .automotive-banner-copy {
+    width: 100%;
+  }
+  .automotive-banner {
+    background-image:
+      linear-gradient(90deg, #032f26ef, #063a2ebe), var(--automotive-image);
+  }
+  .automotive-banner .inst-tag {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+  .automotive-banner h1 {
+    font-size: 30px;
+  }
+  .automotive-banner p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+  .inst-cta .inst-actions {
+    padding: 14px;
+    width: 100%;
+  }
+  .structure-highlight,
+  .inst-cta,
+  .new-experiences {
+    background-position:
+      center,
+      right center;
+  }
+}
+.profile-car-scene {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center 60%;
+  border-radius: 12px;
+  margin: 12px 0 20px;
+}
+.profile-icon .auto-icon {
+  width: 30px;
+  height: 30px;
+}
+@media (max-width: 600px) {
+  .profile-car-scene {
+    height: 160px;
+  }
+}
+/* Apresentação do estoque inspirada na composição enviada. */
+.inst-principles {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  background: #073f31;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  gap: 20px;
+}
+.inst-principles > span {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: var(--lime);
+}
+.inst-principles b {
+  color: #edf4eb;
+  font-size: 12px;
+  font-weight: 500;
+}
+.inst-principles .auto-icon {
+  width: 27px;
+  height: 27px;
+}
+.next-direction {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(40px, 8vw, 120px);
+  padding: 50px 60px;
+  margin: 0 0 32px;
+  min-height: 460px;
+}
+.next-direction:before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: 0 calc((min(100vw, 1184px) - 100vw) / 2);
+  background:
+    linear-gradient(90deg, #f2f6f1f5, #f5f8f3ee 48%, #e7eeddce),
+    url("/images/institucional/loja-fachada.jpg") center 65% / cover;
+  pointer-events: none;
+}
+.next-direction:after {
+  content: "";
+  position: absolute;
+  right: -55px;
+  top: -30px;
+  z-index: -1;
+  width: 300px;
+  height: 340px;
+  border: 30px double #ffffffa6;
+  border-radius: 50%;
+  transform: rotate(-25deg);
+  pointer-events: none;
+}
+.direction-copy {
+  max-width: 390px;
+}
+.direction-copy .inst-tag {
+  font-size: 10px;
+  letter-spacing: 2.4px;
+  margin-bottom: 16px;
+}
+.direction-copy h2 {
+  font-size: clamp(31px, 3.3vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -1.6px;
+  margin: 0 0 22px;
+  color: #103e32;
+}
+.direction-copy p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #446753;
+  margin-bottom: 24px;
+}
+.direction-stock {
+  background: var(--lime);
+  color: var(--forest);
+  font-size: 12px;
+  gap: 25px;
+}
+.direction-car {
+  background: #fff;
+  border: 1px solid #e0e8db;
+  border-radius: 16px;
+  padding: 17px;
+  width: 100%;
+  max-width: 420px;
+  justify-self: end;
+  box-shadow: 0 18px 45px #173f2826;
+}
+.direction-photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.direction-photo img {
+  display: block;
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  object-position: center 62%;
+}
+.direction-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  border-radius: 18px;
+  padding: 8px 12px;
+  background: var(--forest);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+}
+.direction-favorite {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffffeb;
+  color: #07543d;
+  font-size: 27px;
+  cursor: pointer;
+}
+.direction-favorite[aria-pressed="true"] {
+  background: var(--lime);
+}
+.direction-car-info {
+  padding: 15px 3px 3px;
+}
+.direction-car-info h3 {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  color: #133f32;
+}
+.direction-car-info p {
+  color: #68816c;
+  font-size: 11px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+.direction-car-info p span {
+  margin: 0 5px;
+  color: #a6b9a5;
+}
+.direction-car-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.direction-car-bottom strong {
+  font-size: 23px;
+  color: #56952b;
+  white-space: nowrap;
+}
+.direction-car-bottom .btn {
+  font-size: 11px;
+  padding: 12px 18px;
+  gap: 20px;
+}
+@media (max-width: 850px) {
+  .next-direction {
+    padding: 36px 16px;
+    gap: 30px;
+  }
+  .inst-principles {
+    gap: 14px;
+  }
+  .inst-principles b {
+    font-size: 10px;
+  }
+  .direction-car-bottom {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .inst-principles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 20px 22px;
+    gap: 20px 16px;
+  }
+  .inst-principles > span:last-child {
+    grid-column: 1/-1;
+    justify-content: center;
+  }
+  .inst-principles b {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  .inst-principles .auto-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .next-direction {
+    grid-template-columns: 1fr;
+    padding: 36px 6px;
+    gap: 28px;
+  }
+  .next-direction:before {
+    inset: 0 -17px;
+  }
+  .next-direction:after {
+    right: 0;
+    width: 160px;
+    height: 260px;
+    top: auto;
+    bottom: 15px;
+  }
+  .direction-copy {
+    max-width: none;
+  }
+  .direction-copy h2 {
+    font-size: 34px;
+  }
+  .direction-copy p {
+    font-size: 14px;
+  }
+  .direction-car {
+    max-width: 420px;
+    justify-self: center;
+    padding: 12px;
+  }
+  .direction-photo img {
+    height: 200px;
+  }
+  .direction-car-bottom strong {
+    font-size: 22px;
+  }
+  .direction-car-bottom .btn {
+    min-height: 44px;
+  }
+}
+/* Mantém os grafismos dentro do bloco, sem ampliar a largura da página. */
+.next-direction {
+  overflow: hidden;
+}
+.next-direction:before {
+  inset: 0;
+}
+.next-direction:after {
+  right: -30px;
+}
+/* Faixa de marcas entre a apresentação e a estrutura. */
+.brand-strip {
+  margin: 0 0 34px;
+  padding: 23px 20px;
+  background: linear-gradient(90deg, #f3f6f3, #fafbf9, #f3f6f3);
+  border-block: 1px solid #e8ede6;
+}
+.brand-strip ul {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.brand-strip li {
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  border-right: 1px solid #e1e6df;
+}
+.brand-strip li:last-child {
+  border-right: 0;
+}
+.brand-strip svg {
+  width: 90px;
+  height: 48px;
+  color: #303730;
+  display: block;
+}
+@media (max-width: 600px) {
+  .brand-strip {
+    margin-bottom: 26px;
+    padding: 16px 8px;
+  }
+  .brand-strip ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 20px;
+  }
+  .brand-strip li {
+    padding-inline: 12px;
+  }
+  .brand-strip li:nth-child(3) {
+    border-right: 0;
+  }
+  .brand-strip svg {
+    width: 78px;
+    height: 42px;
+  }
+}
+/* Showroom panorâmico: a arquitetura ocupa o centro da composição. */
+.structure-showcase {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 410px;
+  margin: 0 0 30px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 32px;
+  background: #07352a;
+  color: #fff;
+}
+.structure-showcase-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 56%;
+  z-index: -2;
+}
+.structure-showcase:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, #022b2480, transparent 56%, #032d24d9),
+    linear-gradient(180deg, #03251e8c, transparent 65%, #03251e26);
+}
+.structure-showcase-copy {
+  max-width: 510px;
+}
+.structure-showcase-copy .inst-tag {
+  color: #d3e9d0;
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  margin-bottom: 12px;
+}
+.structure-showcase h2 {
+  color: white;
+  font-size: clamp(27px, 3vw, 39px);
+  line-height: 1.13;
+  letter-spacing: -1px;
+  margin: 0;
+  text-shadow: 0 2px 15px #03251ea6;
+}
+.structure-showcase-details {
+  align-self: center;
+  width: 260px;
+  flex-shrink: 0;
+  padding: 22px;
+  border-radius: 12px;
+  background: #04382edb;
+  border: 1px solid #ffffff14;
+}
+.structure-showcase-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.structure-showcase-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #ffffff21;
+  font-size: 13px;
+  font-weight: 500;
+}
+.structure-showcase-details li:last-child {
+  border-bottom: 0;
+}
+.structure-showcase-details .auto-icon {
+  width: 25px;
+  height: 25px;
+  color: var(--lime);
+}
+.structure-showcase-details .btn.outline {
+  background: transparent;
+  border-color: #a8c58f;
+  color: #e9f4df;
+  font-size: 10px;
+  margin-top: 18px;
+  min-height: 44px;
+  padding: 10px 14px;
+  width: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 850px) {
+  .structure-showcase {
+    padding: 28px;
+    gap: 20px;
+  }
+  .structure-showcase-details {
+    width: 235px;
+    padding: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .structure-showcase {
+    min-height: 540px;
+    padding: 26px 22px;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .structure-showcase-photo {
+    object-position: 48% center;
+  }
+  .structure-showcase:before {
+    background: linear-gradient(180deg, #03251ebf, transparent 45%, #03251ec9);
+  }
+  .structure-showcase-copy .inst-tag {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+  .structure-showcase h2 {
+    font-size: 29px;
+  }
+  .structure-showcase-details {
+    width: 100%;
+    align-self: stretch;
+    padding: 12px 18px;
+  }
+  .structure-showcase-details li {
+    padding: 10px 0;
+  }
+}
+/* Serviços compactos sobre fotografia exclusiva de roda e carro. */
+.home-institutional > .home-services {
+  padding: 30px 32px;
+  background:
+    linear-gradient(90deg, #eaf2e4f2, #eaf2e4c9 55%, #eaf2e43d),
+    url("/images/institucional/servicos-roda.jpg") center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.home-services .inst-heading {
+  margin-bottom: 20px;
+}
+.home-services .inst-tag {
+  font-size: 9px;
+  letter-spacing: 1.6px;
+  margin-bottom: 9px;
+}
+.home-services .inst-heading h2 {
+  font-size: clamp(25px, 2.5vw, 32px);
+  margin-bottom: 0;
+  letter-spacing: -0.8px;
+}
+.home-services .inst-services {
+  gap: 14px;
+  max-width: 1000px;
+}
+.home-services .inst-services article {
+  padding: 20px 18px 16px;
+  min-height: 238px;
+  background: #f9fcf4f2;
+  border: 1px solid #e1ebd8;
+  border-radius: 12px;
+  box-shadow: 0 5px 16px #123b2e12;
+}
+.home-services .inst-services .service-number {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 13px;
+  border-radius: 50%;
+}
+.home-services .service-number .auto-icon {
+  width: 22px;
+  height: 22px;
+}
+.home-services .inst-services h3 {
+  font-size: 15px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+.home-services .inst-services p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.home-services .inst-services a {
+  font-size: 11px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 850px) {
+  .home-services .inst-services {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .home-services .inst-services article {
+    min-height: 0;
+  }
+}
+@media (max-width: 600px) {
+  .home-institutional > .home-services {
+    padding: 25px 18px;
+    background-position:
+      center,
+      right center;
+  }
+  .home-services .inst-services {
+    gap: 12px;
+  }
+  .home-services .inst-services article {
+    padding: 16px 13px 12px;
+    min-height: 0;
+  }
+  .home-services .inst-services h3 {
+    font-size: 14px;
+  }
+  .home-services .inst-services p {
+    font-size: 12px;
+  }
+  .home-services .inst-services a {
+    min-height: 44px;
+    font-size: 11px;
+  }
+}

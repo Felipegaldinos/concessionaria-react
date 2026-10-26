@@ -1,14 +1,16 @@
-import ProfileFinder from "../components/institutional/ProfileFinder";
 import React from "react";
+import ProfileFinder from "../components/institutional/ProfileFinder";
 import Action from "../components/institutional/Action.jsx";
 import Intro from "../components/institutional/Intro.jsx";
 import DemoNote from "../components/institutional/DemoNote.jsx";
 import CTA from "../components/institutional/CTA.jsx";
 import ServicesGrid from "../components/institutional/ServicesGrid.jsx";
 import Journey from "../components/institutional/Journey.jsx";
-import { spaces } from "../data/institutional.js";
+import AutoIcon from "../components/common/AutoIcon.jsx";
+import BrandStrip from "../components/institutional/BrandStrip.jsx";
+import StructureShowcase from "../components/institutional/StructureShowcase.jsx";
 
-export default function Home({}) {
+export default function Home() {
   return (
     <>
       <section className="welcome">
@@ -42,16 +44,24 @@ export default function Home({}) {
       </section>
       <div className="inst-principles container">
         <span>
-          01 <b>Escolha com informação</b>
+          <AutoIcon type="car" />
+          <b>Novos e seminovos</b>
         </span>
         <span>
-          02 <b>Atendimento próximo</b>
+          <AutoIcon type="gauge" />
+          <b>Financiamento facilitado</b>
         </span>
         <span>
-          03 <b>Planejamento da compra</b>
+          <AutoIcon type="key" />
+          <b>Entrega imediata</b>
         </span>
         <span>
-          04 <b>Apoio em cada etapa</b>
+          <AutoIcon type="wheel" />
+          <b>Troca com avaliação justa</b>
+        </span>
+        <span>
+          <AutoIcon type="key" />
+          <b>Pós-venda especializado</b>
         </span>
       </div>
       <div className="container institutional home-institutional">
@@ -98,26 +108,9 @@ export default function Home({}) {
             <span>Seu caminho inspira a nossa proposta.</span>
           </div>
         </section>
-        <section className="inst-section structure-highlight">
-          <Intro
-            tag="NOSSA ESTRUTURA"
-            title="Espaços pensados para receber você."
-            text="Conheça o conceito dos ambientes que compõem a experiência Vértice, da primeira visita à entrega."
-          />
-          <div className="space-preview">
-            {spaces.slice(0, 3).map(([n, t, p]) => (
-              <article key={n}>
-                <span>{n}</span>
-                <h3>{t}</h3>
-                <p>{p}</p>
-              </article>
-            ))}
-          </div>
-          <Action to="/estrutura" outline>
-            Explore nossa estrutura
-          </Action>
-        </section>
-        <section className="inst-section">
+        <BrandStrip />
+        <StructureShowcase />
+        <section className="inst-section home-services">
           <Intro tag="SOLUÇÕES PARA SUA ESCOLHA" title="Como podemos ajudar?" />
           <ServicesGrid />
         </section>
